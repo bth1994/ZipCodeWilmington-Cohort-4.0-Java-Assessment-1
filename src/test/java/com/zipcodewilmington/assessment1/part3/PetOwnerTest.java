@@ -40,7 +40,7 @@ public class PetOwnerTest {
         Assert.assertEquals(actual, expected);
     }
 
-    @Test
+   @Test
     public void addPetTest2() {
         // Given
         Pet newPet = new Dog();

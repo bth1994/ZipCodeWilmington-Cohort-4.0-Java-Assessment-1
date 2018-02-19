@@ -5,12 +5,12 @@ package com.zipcodewilmington.assessment1.part3;
  */
 public class Cat extends Pet {
     private String name;
-    private Integer age;
+    private int age;
     /**
      * @param name name of this Cat
      * @param age age of this Cat
      */
-    public Cat(String name, Integer age) {
+    public Cat(String name, int age) {
         this.name = name;
         this.age = age;
     }
@@ -18,7 +18,7 @@ public class Cat extends Pet {
     /**
      * @param age age of this Cat
      */
-    public Cat(Integer age) {
+    public Cat(int age) {
         this.age = age;
     }
 

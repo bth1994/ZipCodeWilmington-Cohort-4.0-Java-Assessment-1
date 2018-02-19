@@ -5,7 +5,7 @@ package com.zipcodewilmington.assessment1.part3;
  */
 public abstract class Pet implements Animal {
     private String name;
-    private Integer age;
+    private int age;
     private PetOwner owner;
     /**
      * nullary constructor
@@ -51,7 +51,7 @@ public abstract class Pet implements Animal {
     /**
      * @return age of this pet
      */
-    public Integer getAge() {
+    public int getAge() {
         return this.age;
     }
 
