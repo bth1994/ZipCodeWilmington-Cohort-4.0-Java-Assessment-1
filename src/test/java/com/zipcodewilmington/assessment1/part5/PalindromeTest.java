@@ -3,6 +3,8 @@ package com.zipcodewilmington.assessment1.part5;
 import org.junit.Assert;
 import org.junit.Test;
 
+import java.util.ArrayList;
+
 public class PalindromeTest {
 
     @Test

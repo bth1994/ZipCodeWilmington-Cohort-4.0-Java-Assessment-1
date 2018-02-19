@@ -46,4 +46,5 @@ public class PetTest {
         // Then
         Assert.assertEquals(expected, actual);
     }
+
 }
