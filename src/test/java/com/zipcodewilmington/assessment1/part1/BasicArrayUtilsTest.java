@@ -50,7 +50,7 @@ public class BasicArrayUtilsTest {
     public void getSecondToLastElementTest() {
         // Given
         String[] inputArray = {"The", "quick", "brown", "fox"};
-        //Originally "fox", I changed it to "brown"
+
         String expected = "brown";
 
         // When

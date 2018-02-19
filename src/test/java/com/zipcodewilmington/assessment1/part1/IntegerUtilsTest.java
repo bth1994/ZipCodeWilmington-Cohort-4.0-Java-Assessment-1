@@ -11,7 +11,7 @@ public class IntegerUtilsTest {
     public void getSumTest() {
         // : Given
         Integer input = 5;
-        //12 to 10 (1 + 2 + 3 + 4) 5 not inclusive
+        //1 + 2 + 3 + 4
         Integer expected = 10;
 
         // : When

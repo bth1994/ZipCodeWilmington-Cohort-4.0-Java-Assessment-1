@@ -35,7 +35,7 @@ public class StringUtils {
         StringBuilder firstWord = new StringBuilder(StringUtils.getFirstWord(sentence));
         String reversedFirstWord = firstWord.reverse().toString();
 
-        return reversedFirstWord.substring(0, 1).toUpperCase() + reversedFirstWord.substring(1).toLowerCase();
+        return reversedFirstWord;
     }
 
     /**
@@ -44,7 +44,7 @@ public class StringUtils {
      * given a string containing words delimited by spaces, representative of a sentence, return the first word with identical contents in reverse order with the first character capitalized
      */
     public static String reverseFirstWordThenCamelCase(String sentence) {
-        return reverseFirstWord(sentence);
+        return reverseFirstWord(sentence).substring(0, 1).toUpperCase() + reverseFirstWord(sentence).substring(1);
     }
 
 

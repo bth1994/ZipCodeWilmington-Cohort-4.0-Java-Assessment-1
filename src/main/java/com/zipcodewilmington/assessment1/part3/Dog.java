@@ -4,29 +4,33 @@ package com.zipcodewilmington.assessment1.part3;
  * Created by leon on 2/16/18.
  */
 public class Dog extends Pet {
-    private String name;
-    private int age;
+     String name;
+     int age;
     /**
      * @param name name of this Dog
      * @param age age of this dog
      */
     public Dog(String name, Integer age) {
-        this.name = name;
-        this.age = age;
+        if(name == null || age == null) {
+            throw new NullPointerException();
+        }
+        super.name = name;
+        super.age = age;
     }
 
     /**
      * @param age age of this dog
      */
     public Dog(int age) {
-        this.age = age;
+        super.age = age;
+        super.name = "Dog name";
     }
 
     /**
      * @param name name of this dog
      */
     public Dog(String name) {
-        this.name = name;
+        super.name = name;
     }
 
     /**
@@ -36,8 +40,8 @@ public class Dog extends Pet {
      * age is 0
      */
     public Dog() {
-        this.name = "DogName";
-        this.age = 0;
+        super.name = "Dog name";
+        super.age = 0;
     }
 
     /**

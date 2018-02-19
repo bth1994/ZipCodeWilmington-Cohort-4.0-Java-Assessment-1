@@ -4,9 +4,9 @@ package com.zipcodewilmington.assessment1.part3;
  * Created by leon on 2/16/18.
  */
 public abstract class Pet implements Animal {
-    private String name;
-    private int age;
-    private PetOwner owner;
+    String name;
+    int age;
+    PetOwner owner;
     /**
      * nullary constructor
      * by default, pet has age of 0; name of "";
@@ -66,7 +66,7 @@ public abstract class Pet implements Animal {
     /**
      * @return PetOwner object whose composite `pets` collection contains this Pet instance
      */
-    public PetOwner getOwner() {
+    public PetOwner getOwner() throws NullPointerException {
         return this.owner;
     }
 }

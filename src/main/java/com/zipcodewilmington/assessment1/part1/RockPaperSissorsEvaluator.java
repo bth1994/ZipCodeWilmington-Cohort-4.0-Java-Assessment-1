@@ -45,9 +45,9 @@ public class RockPaperSissorsEvaluator {
         if(handSignOfPlayer1.equals(handSignOfPlayer2)) {
             return "Tied!";
         } else if(RockPaperSissorsEvaluator.getLosingMove(handSignOfPlayer1) == handSignOfPlayer2){
-            return handSignOfPlayer1;
-        } else {
             return handSignOfPlayer2;
+        } else {
+            return handSignOfPlayer1;
         }
     }
 }
